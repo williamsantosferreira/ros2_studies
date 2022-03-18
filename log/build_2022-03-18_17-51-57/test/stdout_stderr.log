@@ -1,0 +1,22 @@
+[35m[1mConsolidate compiler generated dependencies of target teste[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/teste.dir/src/teste.cpp.o[0m
+[100%] [32m[1mLinking CXX executable teste[0m
+[100%] Built target teste
+-- Install configuration: ""
+-- Installing: /home/william/Área de Trabalho/workspace/install/test/lib/test/teste
+-- Set runtime path of "/home/william/Área de Trabalho/workspace/install/test/lib/test/teste" to ""
+-- Installing: /home/william/Área de Trabalho/workspace/install/test/share/ament_index/resource_index/package_run_dependencies/test
+-- Installing: /home/william/Área de Trabalho/workspace/install/test/share/ament_index/resource_index/parent_prefix_path/test
+-- Up-to-date: /home/william/Área de Trabalho/workspace/install/test/share/test/environment/ament_prefix_path.sh
+-- Installing: /home/william/Área de Trabalho/workspace/install/test/share/test/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/william/Área de Trabalho/workspace/install/test/share/test/environment/path.sh
+-- Installing: /home/william/Área de Trabalho/workspace/install/test/share/test/environment/path.dsv
+-- Up-to-date: /home/william/Área de Trabalho/workspace/install/test/share/test/local_setup.bash
+-- Up-to-date: /home/william/Área de Trabalho/workspace/install/test/share/test/local_setup.sh
+-- Up-to-date: /home/william/Área de Trabalho/workspace/install/test/share/test/local_setup.zsh
+-- Installing: /home/william/Área de Trabalho/workspace/install/test/share/test/local_setup.dsv
+-- Installing: /home/william/Área de Trabalho/workspace/install/test/share/test/package.dsv
+-- Up-to-date: /home/william/Área de Trabalho/workspace/install/test/share/ament_index/resource_index/packages/test
+-- Up-to-date: /home/william/Área de Trabalho/workspace/install/test/share/test/cmake/testConfig.cmake
+-- Up-to-date: /home/william/Área de Trabalho/workspace/install/test/share/test/cmake/testConfig-version.cmake
+-- Installing: /home/william/Área de Trabalho/workspace/install/test/share/test/package.xml

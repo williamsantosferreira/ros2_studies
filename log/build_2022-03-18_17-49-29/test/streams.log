@@ -1,0 +1,48 @@
+[0.018s] Invoking command in '/home/william/Área de Trabalho/workspace/build/test': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/local/bin/cmake --build /home/william/Área de Trabalho/workspace/build/test -- -j6 -l6
+[0.026s] -- Found ament_cmake: 0.9.9 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.047s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.212s] -- Found rclcpp: 2.4.1 (/opt/ros/foxy/share/rclcpp/cmake)
+[0.239s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.242s] -- Found rosidl_adapter: 1.2.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[0.328s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.368s] -- Found rmw_implementation_cmake: 1.0.3 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[0.369s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.481s] -- Found ament_lint_auto: 0.9.6 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+[0.533s] -- Added test 'copyright' to check source files copyright and LICENSE
+[0.534s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[0.534s] -- Configured cppcheck include dirs: 
+[0.534s] -- Configured cppcheck exclude dirs and/or files: 
+[0.535s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[0.535s] -- Configured cpplint exclude dirs and/or files: 
+[0.535s] -- Added test 'lint_cmake' to check CMake code style
+[0.536s] -- Added test 'uncrustify' to check C / C++ code style
+[0.536s] -- Configured uncrustify additional arguments: 
+[0.536s] -- Added test 'xmllint' to check XML markup files
+[0.536s] -- Configuring done
+[0.543s] -- Generating done
+[0.544s] -- Build files have been written to: /home/william/Área de Trabalho/workspace/build/test
+[0.554s] [ 50%] [32mBuilding CXX object CMakeFiles/teste.dir/src/teste.cpp.o[0m
+[1.547s] [01m[K/home/william/Área de Trabalho/workspace/src/test/src/teste.cpp:6:45:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[K][m[K’ token
+[1.547s]     6 | class MinimalPublisher: public rclcpp::Node{[01;31m[K][m[K
+[1.547s]       |                                             [01;31m[K^[m[K
+[1.547s] [01m[K/home/william/Área de Trabalho/workspace/src/test/src/teste.cpp:23:2:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ after class definition
+[1.547s]    23 | }
+[1.547s]       |  [01;31m[K^[m[K
+[1.547s]       |  [32m[K;[m[K
+[1.549s] [01m[K/home/william/Área de Trabalho/workspace/src/test/src/teste.cpp:[m[K In constructor ‘[01m[KMinimalPublisher::MinimalPublisher()[m[K’:
+[1.549s] [01m[K/home/william/Área de Trabalho/workspace/src/test/src/teste.cpp:14:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kpublisher_[m[K’ was not declared in this scope; did you mean ‘[01m[Kpublish[m[K’?
+[1.549s]    14 |             [01;31m[Kpublisher_[m[K = this->create_publisher<std_msgs::msg::String>("topic",10);
+[1.549s]       |             [01;31m[K^~~~~~~~~~[m[K
+[1.549s]       |             [32m[Kpublish[m[K
+[1.551s] [01m[K/home/william/Área de Trabalho/workspace/src/test/src/teste.cpp:15:46:[m[K [01;31m[Kerror: [m[Kunable to find numeric literal operator ‘[01m[Koperator""ms[m[K’
+[1.551s]    15 |             timer_ = this->create_wall_timer([01;31m[K500ms[m[K, std::bind(&MinimalPublisher::publish, this));
+[1.551s]       |                                              [01;31m[K^~~~~[m[K
+[1.558s] [01m[K/home/william/Área de Trabalho/workspace/src/test/src/teste.cpp:[m[K In member function ‘[01m[Kvoid MinimalPublisher::publish()[m[K’:
+[1.558s] [01m[K/home/william/Área de Trabalho/workspace/src/test/src/teste.cpp:21:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kpublisher_[m[K’ was not declared in this scope; did you mean ‘[01m[Kpublish[m[K’?
+[1.558s]    21 |             [01;31m[Kpublisher_[m[K->publish(msg);
+[1.558s]       |             [01;31m[K^~~~~~~~~~[m[K
+[1.558s]       |             [32m[Kpublish[m[K
+[2.038s] make[2]: *** [CMakeFiles/teste.dir/build.make:76: CMakeFiles/teste.dir/src/teste.cpp.o] Erro 1
+[2.038s] make[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/teste.dir/all] Erro 2
+[2.038s] make: *** [Makefile:146: all] Erro 2
+[2.039s] Invoked command in '/home/william/Área de Trabalho/workspace/build/test' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/local/bin/cmake --build /home/william/Área de Trabalho/workspace/build/test -- -j6 -l6

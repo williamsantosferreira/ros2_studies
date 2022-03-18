@@ -1,0 +1,23 @@
+[01m[K/home/william/Área de Trabalho/workspace/src/test/src/teste.cpp:6:45:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[K][m[K’ token
+    6 | class MinimalPublisher: public rclcpp::Node{[01;31m[K][m[K
+      |                                             [01;31m[K^[m[K
+[01m[K/home/william/Área de Trabalho/workspace/src/test/src/teste.cpp:23:2:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ after class definition
+   23 | }
+      |  [01;31m[K^[m[K
+      |  [32m[K;[m[K
+[01m[K/home/william/Área de Trabalho/workspace/src/test/src/teste.cpp:[m[K In constructor ‘[01m[KMinimalPublisher::MinimalPublisher()[m[K’:
+[01m[K/home/william/Área de Trabalho/workspace/src/test/src/teste.cpp:14:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kpublisher_[m[K’ was not declared in this scope; did you mean ‘[01m[Kpublish[m[K’?
+   14 |             [01;31m[Kpublisher_[m[K = this->create_publisher<std_msgs::msg::String>("topic",10);
+      |             [01;31m[K^~~~~~~~~~[m[K
+      |             [32m[Kpublish[m[K
+[01m[K/home/william/Área de Trabalho/workspace/src/test/src/teste.cpp:15:46:[m[K [01;31m[Kerror: [m[Kunable to find numeric literal operator ‘[01m[Koperator""ms[m[K’
+   15 |             timer_ = this->create_wall_timer([01;31m[K500ms[m[K, std::bind(&MinimalPublisher::publish, this));
+      |                                              [01;31m[K^~~~~[m[K
+[01m[K/home/william/Área de Trabalho/workspace/src/test/src/teste.cpp:[m[K In member function ‘[01m[Kvoid MinimalPublisher::publish()[m[K’:
+[01m[K/home/william/Área de Trabalho/workspace/src/test/src/teste.cpp:21:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kpublisher_[m[K’ was not declared in this scope; did you mean ‘[01m[Kpublish[m[K’?
+   21 |             [01;31m[Kpublisher_[m[K->publish(msg);
+      |             [01;31m[K^~~~~~~~~~[m[K
+      |             [32m[Kpublish[m[K
+make[2]: *** [CMakeFiles/teste.dir/build.make:76: CMakeFiles/teste.dir/src/teste.cpp.o] Erro 1
+make[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/teste.dir/all] Erro 2
+make: *** [Makefile:146: all] Erro 2

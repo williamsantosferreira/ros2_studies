@@ -1,0 +1,40 @@
+[0.015s] Invoking command in '/home/william/Área de Trabalho/workspace/build/test': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/local/bin/cmake --build /home/william/Área de Trabalho/workspace/build/test -- -j6 -l6
+[0.035s] -- Found ament_cmake: 0.9.9 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.054s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.222s] -- Found rclcpp: 2.4.1 (/opt/ros/foxy/share/rclcpp/cmake)
+[0.258s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.271s] -- Found rosidl_adapter: 1.2.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[0.320s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "1.1.1f")  
+[0.339s] -- Found FastRTPS: /opt/ros/foxy/include  
+[0.399s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.446s] -- Found rmw_implementation_cmake: 1.0.3 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[0.447s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.448s] -- Looking for pthread.h
+[0.489s] -- Looking for pthread.h - found
+[0.489s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[0.531s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+[0.531s] -- Looking for pthread_create in pthreads
+[0.560s] -- Looking for pthread_create in pthreads - not found
+[0.560s] -- Looking for pthread_create in pthread
+[0.598s] -- Looking for pthread_create in pthread - found
+[0.599s] -- Found Threads: TRUE  
+[0.720s] -- Found ament_lint_auto: 0.9.6 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+[0.772s] -- Added test 'copyright' to check source files copyright and LICENSE
+[0.772s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[0.772s] -- Configured cppcheck include dirs: 
+[0.773s] -- Configured cppcheck exclude dirs and/or files: 
+[0.773s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[0.773s] -- Configured cpplint exclude dirs and/or files: 
+[0.774s] -- Added test 'lint_cmake' to check CMake code style
+[0.774s] -- Added test 'uncrustify' to check C / C++ code style
+[0.774s] -- Configured uncrustify additional arguments: 
+[0.775s] -- Added test 'xmllint' to check XML markup files
+[0.775s] [31mCMake Error at CMakeLists.txt:39 (install):
+[0.775s]   install TARGETS given target "teste" which does not exist.
+[0.775s] 
+[0.775s] [0m
+[0.775s] -- Configuring incomplete, errors occurred!
+[0.775s] See also "/home/william/Área de Trabalho/workspace/build/test/CMakeFiles/CMakeOutput.log".
+[0.775s] See also "/home/william/Área de Trabalho/workspace/build/test/CMakeFiles/CMakeError.log".
+[0.779s] make: *** [Makefile:226: cmake_check_build_system] Erro 1
+[0.780s] Invoked command in '/home/william/Área de Trabalho/workspace/build/test' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/local/bin/cmake --build /home/william/Área de Trabalho/workspace/build/test -- -j6 -l6

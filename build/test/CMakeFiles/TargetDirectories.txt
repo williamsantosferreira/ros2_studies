@@ -1,0 +1,11 @@
+/home/william/Área de Trabalho/workspace/build/test/CMakeFiles/publisher.dir
+/home/william/Área de Trabalho/workspace/build/test/CMakeFiles/install/strip.dir
+/home/william/Área de Trabalho/workspace/build/test/CMakeFiles/list_install_components.dir
+/home/william/Área de Trabalho/workspace/build/test/CMakeFiles/install.dir
+/home/william/Área de Trabalho/workspace/build/test/CMakeFiles/uninstall.dir
+/home/william/Área de Trabalho/workspace/build/test/CMakeFiles/subscriber.dir
+/home/william/Área de Trabalho/workspace/build/test/CMakeFiles/test_uninstall.dir
+/home/william/Área de Trabalho/workspace/build/test/CMakeFiles/test.dir
+/home/william/Área de Trabalho/workspace/build/test/CMakeFiles/edit_cache.dir
+/home/william/Área de Trabalho/workspace/build/test/CMakeFiles/rebuild_cache.dir
+/home/william/Área de Trabalho/workspace/build/test/CMakeFiles/install/local.dir

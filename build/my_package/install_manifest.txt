@@ -1,0 +1,16 @@
+/home/william/Área de Trabalho/workspace/install/my_package/lib/my_package/my_node
+/home/william/Área de Trabalho/workspace/install/my_package/share/ament_index/resource_index/package_run_dependencies/my_package
+/home/william/Área de Trabalho/workspace/install/my_package/share/ament_index/resource_index/parent_prefix_path/my_package
+/home/william/Área de Trabalho/workspace/install/my_package/share/my_package/environment/ament_prefix_path.sh
+/home/william/Área de Trabalho/workspace/install/my_package/share/my_package/environment/ament_prefix_path.dsv
+/home/william/Área de Trabalho/workspace/install/my_package/share/my_package/environment/path.sh
+/home/william/Área de Trabalho/workspace/install/my_package/share/my_package/environment/path.dsv
+/home/william/Área de Trabalho/workspace/install/my_package/share/my_package/local_setup.bash
+/home/william/Área de Trabalho/workspace/install/my_package/share/my_package/local_setup.sh
+/home/william/Área de Trabalho/workspace/install/my_package/share/my_package/local_setup.zsh
+/home/william/Área de Trabalho/workspace/install/my_package/share/my_package/local_setup.dsv
+/home/william/Área de Trabalho/workspace/install/my_package/share/my_package/package.dsv
+/home/william/Área de Trabalho/workspace/install/my_package/share/ament_index/resource_index/packages/my_package
+/home/william/Área de Trabalho/workspace/install/my_package/share/my_package/cmake/my_packageConfig.cmake
+/home/william/Área de Trabalho/workspace/install/my_package/share/my_package/cmake/my_packageConfig-version.cmake
+/home/william/Área de Trabalho/workspace/install/my_package/share/my_package/package.xml
