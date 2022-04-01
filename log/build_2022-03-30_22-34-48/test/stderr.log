@@ -1,0 +1,18 @@
+In file included from [01m[K/opt/ros/foxy/include/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/callback_group.hpp:23[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategy.hpp:24[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/executor.hpp:33[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+                 from [01m[K/home/william/Área de Trabalho/workspace/src/test/src/turtle.cpp:34[m[K:
+[01m[K/home/william/Área de Trabalho/workspace/src/test/src/turtle.cpp:[m[K In member function ‘[01m[Kvoid Turtle::topic_callback(turtlesim::msg::Pose_<std::allocator<void> >::SharedPtr) const[m[K’:
+[01m[K/home/william/Área de Trabalho/workspace/src/test/src/turtle.cpp:45:63:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing element_type = struct turtlesim::msg::Pose_<std::allocator<void> >[m[K’ {aka ‘[01m[Kstruct turtlesim::msg::Pose_<std::allocator<void> >[m[K’} has no member named ‘[01m[Kdata[m[K’
+   45 |         RCLCPP_INFO(this->get_logger(), "I heard: '%f'", msg->[01;31m[Kdata[m[K.c_str());
+      |                                                               [01;31m[K^~~~[m[K
+make[2]: *** [CMakeFiles/turtle.dir/build.make:76: CMakeFiles/turtle.dir/src/turtle.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:141: CMakeFiles/turtle.dir/all] Error 2
+make: *** [Makefile:146: all] Error 2

@@ -1,0 +1,14 @@
+[0.014s] Invoking command in '/home/william/Área de Trabalho/workspace/build/test': CMAKE_PREFIX_PATH=/opt/ros/foxy:${CMAKE_PREFIX_PATH} /usr/local/bin/cmake --build /home/william/Área de Trabalho/workspace/build/test -- -j6 -l6
+[0.028s] [35m[1mConsolidate compiler generated dependencies of target turtle_move[0m
+[0.037s] [ 16%] [32mBuilding CXX object CMakeFiles/turtle_move.dir/src/turtle_move.cpp.o[0m
+[0.037s] [ 50%] Built target publisher
+[0.040s] [ 83%] Built target subscriber
+[1.030s] [01m[K/home/william/Área de Trabalho/workspace/src/test/src/turtle_move.cpp:[m[K In member function ‘[01m[Kvoid TurtleMove::publish()[m[K’:
+[1.030s] [01m[K/home/william/Área de Trabalho/workspace/src/test/src/turtle_move.cpp:54:8:[m[K [01;31m[Kerror: [m[K‘[01m[Kread[m[K’ was not declared in this scope; did you mean ‘[01m[Kfread[m[K’?
+[1.030s]    54 |     if([01;31m[Kread[m[K(kfd, &c, 1) < 0)
+[1.030s]       |        [01;31m[K^~~~[m[K
+[1.030s]       |        [32m[Kfread[m[K
+[1.736s] make[2]: *** [CMakeFiles/turtle_move.dir/build.make:76: CMakeFiles/turtle_move.dir/src/turtle_move.cpp.o] Error 1
+[1.736s] make[1]: *** [CMakeFiles/Makefile2:141: CMakeFiles/turtle_move.dir/all] Error 2
+[1.736s] make: *** [Makefile:146: all] Error 2
+[1.737s] Invoked command in '/home/william/Área de Trabalho/workspace/build/test' returned '2': CMAKE_PREFIX_PATH=/opt/ros/foxy:${CMAKE_PREFIX_PATH} /usr/local/bin/cmake --build /home/william/Área de Trabalho/workspace/build/test -- -j6 -l6

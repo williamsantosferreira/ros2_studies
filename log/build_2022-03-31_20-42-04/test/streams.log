@@ -1,0 +1,12 @@
+[0.015s] Invoking command in '/home/william/Área de Trabalho/workspace/build/test': CMAKE_PREFIX_PATH=/opt/ros/foxy:${CMAKE_PREFIX_PATH} /usr/local/bin/cmake --build /home/william/Área de Trabalho/workspace/build/test -- -j6 -l6
+[0.034s] [35m[1mConsolidate compiler generated dependencies of target turtle_move[0m
+[0.037s] [ 33%] Built target publisher
+[0.039s] [ 66%] Built target subscriber
+[0.042s] [ 83%] [32m[1mLinking CXX executable turtle_move[0m
+[0.170s] /usr/bin/ld: CMakeFiles/turtle_move.dir/src/turtle_move.cpp.o: in function `TurtleMove::TurtleMove()':
+[0.170s] turtle_move.cpp:(.text._ZN10TurtleMoveC2Ev[_ZN10TurtleMoveC5Ev]+0x2cc): undefined reference to `initscr'
+[0.170s] collect2: error: ld returned 1 exit status
+[0.170s] make[2]: *** [CMakeFiles/turtle_move.dir/build.make:164: turtle_move] Error 1
+[0.170s] make[1]: *** [CMakeFiles/Makefile2:141: CMakeFiles/turtle_move.dir/all] Error 2
+[0.171s] make: *** [Makefile:146: all] Error 2
+[0.172s] Invoked command in '/home/william/Área de Trabalho/workspace/build/test' returned '2': CMAKE_PREFIX_PATH=/opt/ros/foxy:${CMAKE_PREFIX_PATH} /usr/local/bin/cmake --build /home/william/Área de Trabalho/workspace/build/test -- -j6 -l6

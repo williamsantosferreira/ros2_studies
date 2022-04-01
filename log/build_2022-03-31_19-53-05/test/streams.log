@@ -1,0 +1,13 @@
+[0.015s] Invoking command in '/home/william/Área de Trabalho/workspace/build/test': CMAKE_PREFIX_PATH=/opt/ros/foxy:${CMAKE_PREFIX_PATH} /usr/local/bin/cmake --build /home/william/Área de Trabalho/workspace/build/test -- -j6 -l6
+[0.031s] [35m[1mConsolidate compiler generated dependencies of target turtle_move[0m
+[0.044s] [ 33%] Built target publisher
+[0.045s] [ 50%] [32mBuilding CXX object CMakeFiles/turtle_move.dir/src/turtle_move.cpp.o[0m
+[0.045s] [ 83%] Built target subscriber
+[1.038s] [01m[K/home/william/Área de Trabalho/workspace/src/test/src/turtle_move.cpp:[m[K In member function ‘[01m[Kvoid TurtleMove::publish()[m[K’:
+[1.038s] [01m[K/home/william/Área de Trabalho/workspace/src/test/src/turtle_move.cpp:25:14:[m[K [01;31m[Kerror: [m[Kbase operand of ‘[01m[K->[m[K’ has non-pointer type ‘[01m[Kgeometry_msgs::msg::Twist[m[K’ {aka ‘[01m[Kgeometry_msgs::msg::Twist_<std::allocator<void> >[m[K’}
+[1.038s]    25 |           msg[01;31m[K->[m[Klinear.x = 1;
+[1.038s]       |              [01;31m[K^~[m[K
+[1.709s] make[2]: *** [CMakeFiles/turtle_move.dir/build.make:76: CMakeFiles/turtle_move.dir/src/turtle_move.cpp.o] Error 1
+[1.709s] make[1]: *** [CMakeFiles/Makefile2:141: CMakeFiles/turtle_move.dir/all] Error 2
+[1.709s] make: *** [Makefile:146: all] Error 2
+[1.710s] Invoked command in '/home/william/Área de Trabalho/workspace/build/test' returned '2': CMAKE_PREFIX_PATH=/opt/ros/foxy:${CMAKE_PREFIX_PATH} /usr/local/bin/cmake --build /home/william/Área de Trabalho/workspace/build/test -- -j6 -l6

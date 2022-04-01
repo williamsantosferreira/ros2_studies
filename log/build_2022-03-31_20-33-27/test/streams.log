@@ -1,0 +1,16 @@
+[0.014s] Invoking command in '/home/william/Área de Trabalho/workspace/build/test': CMAKE_PREFIX_PATH=/opt/ros/foxy:${CMAKE_PREFIX_PATH} /usr/local/bin/cmake --build /home/william/Área de Trabalho/workspace/build/test -- -j6 -l6
+[0.032s] [35m[1mConsolidate compiler generated dependencies of target turtle_move[0m
+[0.041s] [ 33%] Built target publisher
+[0.042s] [ 66%] Built target subscriber
+[0.044s] [ 83%] [32mBuilding CXX object CMakeFiles/turtle_move.dir/src/turtle_move.cpp.o[0m
+[1.020s] [01m[K/home/william/Área de Trabalho/workspace/src/test/src/turtle_move.cpp:20:23:[m[K [01;31m[Kerror: [m[K‘[01m[Ktermios raw[m[K’ redeclared as different kind of entity
+[1.021s]    20 | struct termios cooked,[01;31m[Kraw[m[K;
+[1.021s]       |                       [01;31m[K^~~[m[K
+[1.021s] In file included from [01m[K/home/william/Área de Trabalho/workspace/src/test/src/turtle_move.cpp:8[m[K:
+[1.021s] [01m[K/usr/include/curses.h:771:28:[m[K [01;36m[Knote: [m[Kprevious declaration ‘[01m[Kint raw()[m[K’
+[1.021s]   771 | extern NCURSES_EXPORT(int) [01;36m[Kraw[m[K (void);     /* implemented */
+[1.021s]       |                            [01;36m[K^~~[m[K
+[1.699s] make[2]: *** [CMakeFiles/turtle_move.dir/build.make:76: CMakeFiles/turtle_move.dir/src/turtle_move.cpp.o] Error 1
+[1.699s] make[1]: *** [CMakeFiles/Makefile2:141: CMakeFiles/turtle_move.dir/all] Error 2
+[1.699s] make: *** [Makefile:146: all] Error 2
+[1.700s] Invoked command in '/home/william/Área de Trabalho/workspace/build/test' returned '2': CMAKE_PREFIX_PATH=/opt/ros/foxy:${CMAKE_PREFIX_PATH} /usr/local/bin/cmake --build /home/william/Área de Trabalho/workspace/build/test -- -j6 -l6

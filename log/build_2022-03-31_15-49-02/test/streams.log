@@ -1,0 +1,13 @@
+[0.015s] Invoking command in '/home/william/Área de Trabalho/workspace/build/test': CMAKE_PREFIX_PATH=/home/william/Área de Trabalho/workspace/install/test:/home/william/Área de Trabalho/workspace/install/my_package:/opt/ros/foxy:/opt/ros/noetic /usr/local/bin/cmake --build /home/william/Área de Trabalho/workspace/build/test -- -j6 -l6
+[0.032s] [35m[1mConsolidate compiler generated dependencies of target turtle[0m
+[0.041s] [ 33%] Built target subscriber
+[0.042s] [ 66%] Built target publisher
+[0.044s] [ 83%] [32mBuilding CXX object CMakeFiles/turtle.dir/src/turtle.cpp.o[0m
+[1.054s] [01m[K/home/william/Área de Trabalho/workspace/src/test/src/turtle.cpp:[m[K In constructor ‘[01m[KTurtle::Turtle()[m[K’:
+[1.054s] [01m[K/home/william/Área de Trabalho/workspace/src/test/src/turtle.cpp:56:112:[m[K [01;31m[Kerror: [m[K‘[01m[Ktopic_callback2[m[K’ is not a member of ‘[01m[KTurtle[m[K’
+[1.054s]    56 |             sub_turtle = this->create_subscription<turtlesim::msg::Pose>("turtle1/pose",10, std::bind(&Turtle::[01;31m[Ktopic_callback2[m[K,this,_1));
+[1.054s]       |                                                                                                                [01;31m[K^~~~~~~~~~~~~~~[m[K
+[2.173s] make[2]: *** [CMakeFiles/turtle.dir/build.make:76: CMakeFiles/turtle.dir/src/turtle.cpp.o] Error 1
+[2.174s] make[1]: *** [CMakeFiles/Makefile2:141: CMakeFiles/turtle.dir/all] Error 2
+[2.174s] make: *** [Makefile:146: all] Error 2
+[2.175s] Invoked command in '/home/william/Área de Trabalho/workspace/build/test' returned '2': CMAKE_PREFIX_PATH=/home/william/Área de Trabalho/workspace/install/test:/home/william/Área de Trabalho/workspace/install/my_package:/opt/ros/foxy:/opt/ros/noetic /usr/local/bin/cmake --build /home/william/Área de Trabalho/workspace/build/test -- -j6 -l6

@@ -1,0 +1,50 @@
+-- Found ament_cmake: 0.9.9 (/opt/ros/foxy/share/ament_cmake/cmake)
+-- Using PYTHON_EXECUTABLE: /usr/bin/python3
+-- Found rclcpp: 2.4.1 (/opt/ros/foxy/share/rclcpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Found rosidl_adapter: 1.2.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found rmw_implementation_cmake: 1.0.3 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+-- Using RMW implementation 'rmw_fastrtps_cpp' as default
+-- Found ament_lint_auto: 0.9.6 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+-- Added test 'copyright' to check source files copyright and LICENSE
+-- Added test 'cppcheck' to perform static code analysis on C / C++ code
+-- Configured cppcheck include dirs: 
+-- Configured cppcheck exclude dirs and/or files: 
+-- Added test 'cpplint' to check C / C++ code against the Google style
+-- Configured cpplint exclude dirs and/or files: 
+-- Added test 'lint_cmake' to check CMake code style
+-- Added test 'uncrustify' to check C / C++ code style
+-- Configured uncrustify additional arguments: 
+-- Added test 'xmllint' to check XML markup files
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/william/Área de Trabalho/workspace/build/test
+[35m[1mConsolidate compiler generated dependencies of target turtle[0m
+[35m[1mConsolidate compiler generated dependencies of target publisher[0m
+[35m[1mConsolidate compiler generated dependencies of target subscriber[0m
+[ 16%] [32mBuilding CXX object CMakeFiles/turtle.dir/src/turtle.cpp.o[0m
+[ 50%] Built target publisher
+[ 83%] Built target subscriber
+[100%] [32m[1mLinking CXX executable turtle[0m
+[100%] Built target turtle
+-- Install configuration: ""
+-- Up-to-date: /home/william/Área de Trabalho/workspace/install/test/lib/test/publisher
+-- Up-to-date: /home/william/Área de Trabalho/workspace/install/test/lib/test/subscriber
+-- Installing: /home/william/Área de Trabalho/workspace/install/test/lib/test/turtle
+-- Set runtime path of "/home/william/Área de Trabalho/workspace/install/test/lib/test/turtle" to ""
+-- Installing: /home/william/Área de Trabalho/workspace/install/test/share/ament_index/resource_index/package_run_dependencies/test
+-- Installing: /home/william/Área de Trabalho/workspace/install/test/share/ament_index/resource_index/parent_prefix_path/test
+-- Up-to-date: /home/william/Área de Trabalho/workspace/install/test/share/test/environment/ament_prefix_path.sh
+-- Installing: /home/william/Área de Trabalho/workspace/install/test/share/test/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/william/Área de Trabalho/workspace/install/test/share/test/environment/path.sh
+-- Installing: /home/william/Área de Trabalho/workspace/install/test/share/test/environment/path.dsv
+-- Up-to-date: /home/william/Área de Trabalho/workspace/install/test/share/test/local_setup.bash
+-- Up-to-date: /home/william/Área de Trabalho/workspace/install/test/share/test/local_setup.sh
+-- Up-to-date: /home/william/Área de Trabalho/workspace/install/test/share/test/local_setup.zsh
+-- Installing: /home/william/Área de Trabalho/workspace/install/test/share/test/local_setup.dsv
+-- Installing: /home/william/Área de Trabalho/workspace/install/test/share/test/package.dsv
+-- Up-to-date: /home/william/Área de Trabalho/workspace/install/test/share/ament_index/resource_index/packages/test
+-- Up-to-date: /home/william/Área de Trabalho/workspace/install/test/share/test/cmake/testConfig.cmake
+-- Up-to-date: /home/william/Área de Trabalho/workspace/install/test/share/test/cmake/testConfig-version.cmake
+-- Installing: /home/william/Área de Trabalho/workspace/install/test/share/test/package.xml

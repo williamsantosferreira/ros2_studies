@@ -1,0 +1,7 @@
+[01m[K/home/william/Área de Trabalho/workspace/src/test/src/turtle.cpp:[m[K In constructor ‘[01m[KTurtle::Turtle()[m[K’:
+[01m[K/home/william/Área de Trabalho/workspace/src/test/src/turtle.cpp:56:112:[m[K [01;31m[Kerror: [m[K‘[01m[Ktopic_callback2[m[K’ is not a member of ‘[01m[KTurtle[m[K’
+   56 |             sub_turtle = this->create_subscription<turtlesim::msg::Pose>("turtle1/pose",10, std::bind(&Turtle::[01;31m[Ktopic_callback2[m[K,this,_1));
+      |                                                                                                                [01;31m[K^~~~~~~~~~~~~~~[m[K
+make[2]: *** [CMakeFiles/turtle.dir/build.make:76: CMakeFiles/turtle.dir/src/turtle.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:141: CMakeFiles/turtle.dir/all] Error 2
+make: *** [Makefile:146: all] Error 2

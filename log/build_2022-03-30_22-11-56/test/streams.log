@@ -1,0 +1,20 @@
+[0.015s] Invoking command in '/home/william/Área de Trabalho/workspace/build/test': CMAKE_PREFIX_PATH=/opt/ros/foxy:${CMAKE_PREFIX_PATH} /usr/local/bin/cmake --build /home/william/Área de Trabalho/workspace/build/test -- -j6 -l6
+[0.034s] [35m[1mConsolidate compiler generated dependencies of target turtle[0m
+[0.046s] [ 33%] Built target subscriber
+[0.048s] [ 50%] [32mBuilding CXX object CMakeFiles/turtle.dir/src/turtle.cpp.o[0m
+[0.050s] [ 83%] Built target publisher
+[1.033s] [01m[K/home/william/Área de Trabalho/workspace/src/test/src/turtle.cpp:[m[K In constructor ‘[01m[KTurtle::Turtle()[m[K’:
+[1.033s] [01m[K/home/william/Área de Trabalho/workspace/src/test/src/turtle.cpp:26:13:[m[K [01;31m[Kerror: [m[K‘[01m[Ksubscription[m[K’ was not declared in this scope; did you mean ‘[01m[Ksubscription_[m[K’?
+[1.033s]    26 |             [01;31m[Ksubscription[m[K = this->create_subscription<turtlesim::msg::Pose>("turtle1/pose",10, std::bind(&MinimalSubscriber::topic_callback, this, _1));
+[1.033s]       |             [01;31m[K^~~~~~~~~~~~[m[K
+[1.033s]       |             [32m[Ksubscription_[m[K
+[1.033s] [01m[K/home/william/Área de Trabalho/workspace/src/test/src/turtle.cpp:26:106:[m[K [01;31m[Kerror: [m[K‘[01m[KMinimalSubscriber[m[K’ has not been declared
+[1.033s]    26 |             subscription = this->create_subscription<turtlesim::msg::Pose>("turtle1/pose",10, std::bind(&[01;31m[KMinimalSubscriber[m[K::topic_callback, this, _1));
+[1.033s]       |                                                                                                          [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[1.034s] [01m[K/home/william/Área de Trabalho/workspace/src/test/src/turtle.cpp:27:72:[m[K [01;31m[Kerror: [m[K‘[01m[Kpublish[m[K’ is not a member of ‘[01m[KTurtle[m[K’
+[1.034s]    27 |             timer_ = this->create_wall_timer(500ms, std::bind(&Turtle::[01;31m[Kpublish[m[K, this));
+[1.034s]       |                                                                        [01;31m[K^~~~~~~[m[K
+[1.323s] make[2]: *** [CMakeFiles/turtle.dir/build.make:76: CMakeFiles/turtle.dir/src/turtle.cpp.o] Error 1
+[1.323s] make[1]: *** [CMakeFiles/Makefile2:141: CMakeFiles/turtle.dir/all] Error 2
+[1.323s] make: *** [Makefile:146: all] Error 2
+[1.324s] Invoked command in '/home/william/Área de Trabalho/workspace/build/test' returned '2': CMAKE_PREFIX_PATH=/opt/ros/foxy:${CMAKE_PREFIX_PATH} /usr/local/bin/cmake --build /home/william/Área de Trabalho/workspace/build/test -- -j6 -l6

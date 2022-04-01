@@ -1,0 +1,31 @@
+[0.014s] Invoking command in '/home/william/Área de Trabalho/workspace/build/test': CMAKE_PREFIX_PATH=/opt/ros/foxy:${CMAKE_PREFIX_PATH} /usr/local/bin/cmake --build /home/william/Área de Trabalho/workspace/build/test -- -j6 -l6
+[0.027s] -- Found ament_cmake: 0.9.9 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.045s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.234s] -- Found rclcpp: 2.4.1 (/opt/ros/foxy/share/rclcpp/cmake)
+[0.261s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.263s] -- Found rosidl_adapter: 1.2.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[0.351s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.389s] -- Found rmw_implementation_cmake: 1.0.3 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[0.390s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.503s] -- Found turtlesim: 1.2.5 (/opt/ros/foxy/share/turtlesim/cmake)
+[0.583s] -- Found geometry_msgs: 2.0.5 (/opt/ros/foxy/share/geometry_msgs/cmake)
+[0.608s] -- Found ament_lint_auto: 0.9.6 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+[0.660s] [31mCMake Error at CMakeLists.txt:49 (install):
+[0.660s]   install TARGETS given target "-lncurses" which does not exist.
+[0.660s] 
+[0.660s] [0m
+[0.662s] -- Added test 'copyright' to check source files copyright and LICENSE
+[0.662s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[0.663s] -- Configured cppcheck include dirs: 
+[0.663s] -- Configured cppcheck exclude dirs and/or files: 
+[0.663s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[0.663s] -- Configured cpplint exclude dirs and/or files: 
+[0.664s] -- Added test 'lint_cmake' to check CMake code style
+[0.664s] -- Added test 'uncrustify' to check C / C++ code style
+[0.664s] -- Configured uncrustify additional arguments: 
+[0.664s] -- Added test 'xmllint' to check XML markup files
+[0.665s] -- Configuring incomplete, errors occurred!
+[0.665s] See also "/home/william/Área de Trabalho/workspace/build/test/CMakeFiles/CMakeOutput.log".
+[0.665s] See also "/home/william/Área de Trabalho/workspace/build/test/CMakeFiles/CMakeError.log".
+[0.668s] make: *** [Makefile:349: cmake_check_build_system] Error 1
+[0.669s] Invoked command in '/home/william/Área de Trabalho/workspace/build/test' returned '2': CMAKE_PREFIX_PATH=/opt/ros/foxy:${CMAKE_PREFIX_PATH} /usr/local/bin/cmake --build /home/william/Área de Trabalho/workspace/build/test -- -j6 -l6

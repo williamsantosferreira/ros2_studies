@@ -1,0 +1,17 @@
+[0.014s] Invoking command in '/home/william/Área de Trabalho/workspace/build/test': CMAKE_PREFIX_PATH=/home/william/Área de Trabalho/workspace/install/test:/home/william/Área de Trabalho/workspace/install/my_package:/opt/ros/foxy:/opt/ros/noetic /usr/local/bin/cmake --build /home/william/Área de Trabalho/workspace/build/test -- -j6 -l6
+[0.040s] [ 33%] Built target subscriber
+[0.041s] [35m[1mConsolidate compiler generated dependencies of target turtle_move[0m
+[0.045s] [ 66%] Built target publisher
+[0.049s] [ 83%] [32mBuilding CXX object CMakeFiles/turtle_move.dir/src/turtle_move.cpp.o[0m
+[1.053s] [01m[K/home/william/Área de Trabalho/workspace/src/test/src/turtle_move.cpp:[m[K In member function ‘[01m[Kvoid TurtleMove::publish()[m[K’:
+[1.054s] [01m[K/home/william/Área de Trabalho/workspace/src/test/src/turtle_move.cpp:55:8:[m[K [01;31m[Kerror: [m[K‘[01m[Kread[m[K’ was not declared in this scope; did you mean ‘[01m[Kfread[m[K’?
+[1.054s]    55 |     if([01;31m[Kread[m[K(kfd, &c, 1) < 0)
+[1.054s]       |        [01;31m[K^~~~[m[K
+[1.054s]       |        [32m[Kfread[m[K
+[1.055s] [01m[K/home/william/Área de Trabalho/workspace/src/test/src/turtle_move.cpp:63:3:[m[K [01;31m[Kerror: [m[K‘[01m[KROS_INFO[m[K’ was not declared in this scope
+[1.055s]    63 |   [01;31m[KROS_INFO[m[K("Move to right");
+[1.055s]       |   [01;31m[K^~~~~~~~[m[K
+[1.754s] make[2]: *** [CMakeFiles/turtle_move.dir/build.make:76: CMakeFiles/turtle_move.dir/src/turtle_move.cpp.o] Error 1
+[1.755s] make[1]: *** [CMakeFiles/Makefile2:141: CMakeFiles/turtle_move.dir/all] Error 2
+[1.755s] make: *** [Makefile:146: all] Error 2
+[1.756s] Invoked command in '/home/william/Área de Trabalho/workspace/build/test' returned '2': CMAKE_PREFIX_PATH=/home/william/Área de Trabalho/workspace/install/test:/home/william/Área de Trabalho/workspace/install/my_package:/opt/ros/foxy:/opt/ros/noetic /usr/local/bin/cmake --build /home/william/Área de Trabalho/workspace/build/test -- -j6 -l6

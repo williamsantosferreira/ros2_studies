@@ -1,0 +1,30 @@
+[0.014s] Invoking command in '/home/william/Área de Trabalho/workspace/build/test': CMAKE_PREFIX_PATH=/opt/ros/foxy:${CMAKE_PREFIX_PATH} /usr/local/bin/cmake --build /home/william/Área de Trabalho/workspace/build/test -- -j6 -l6
+[0.039s] [ 50%] Built target subscriber
+[0.039s] [ 66%] Built target publisher
+[0.042s] [35m[1mConsolidate compiler generated dependencies of target turtle_move[0m
+[0.049s] [ 83%] [32mBuilding CXX object CMakeFiles/turtle_move.dir/src/turtle_move.cpp.o[0m
+[2.335s] [100%] [32m[1mLinking CXX executable turtle_move[0m
+[2.460s] [100%] Built target turtle_move
+[2.464s] Invoked command in '/home/william/Área de Trabalho/workspace/build/test' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy:${CMAKE_PREFIX_PATH} /usr/local/bin/cmake --build /home/william/Área de Trabalho/workspace/build/test -- -j6 -l6
+[2.480s] Invoking command in '/home/william/Área de Trabalho/workspace/build/test': CMAKE_PREFIX_PATH=/opt/ros/foxy:${CMAKE_PREFIX_PATH} /usr/local/bin/cmake --install /home/william/Área de Trabalho/workspace/build/test
+[2.481s] -- Install configuration: ""
+[2.481s] -- Up-to-date: /home/william/Área de Trabalho/workspace/install/test/lib/test/publisher
+[2.481s] -- Up-to-date: /home/william/Área de Trabalho/workspace/install/test/lib/test/subscriber
+[2.482s] -- Installing: /home/william/Área de Trabalho/workspace/install/test/lib/test/turtle_move
+[2.483s] -- Set runtime path of "/home/william/Área de Trabalho/workspace/install/test/lib/test/turtle_move" to ""
+[2.483s] -- Up-to-date: /home/william/Área de Trabalho/workspace/install/test/share/ament_index/resource_index/package_run_dependencies/test
+[2.483s] -- Up-to-date: /home/william/Área de Trabalho/workspace/install/test/share/ament_index/resource_index/parent_prefix_path/test
+[2.483s] -- Up-to-date: /home/william/Área de Trabalho/workspace/install/test/share/test/environment/ament_prefix_path.sh
+[2.483s] -- Up-to-date: /home/william/Área de Trabalho/workspace/install/test/share/test/environment/ament_prefix_path.dsv
+[2.483s] -- Up-to-date: /home/william/Área de Trabalho/workspace/install/test/share/test/environment/path.sh
+[2.483s] -- Up-to-date: /home/william/Área de Trabalho/workspace/install/test/share/test/environment/path.dsv
+[2.483s] -- Up-to-date: /home/william/Área de Trabalho/workspace/install/test/share/test/local_setup.bash
+[2.483s] -- Up-to-date: /home/william/Área de Trabalho/workspace/install/test/share/test/local_setup.sh
+[2.484s] -- Up-to-date: /home/william/Área de Trabalho/workspace/install/test/share/test/local_setup.zsh
+[2.484s] -- Up-to-date: /home/william/Área de Trabalho/workspace/install/test/share/test/local_setup.dsv
+[2.484s] -- Installing: /home/william/Área de Trabalho/workspace/install/test/share/test/package.dsv
+[2.485s] -- Up-to-date: /home/william/Área de Trabalho/workspace/install/test/share/ament_index/resource_index/packages/test
+[2.486s] -- Up-to-date: /home/william/Área de Trabalho/workspace/install/test/share/test/cmake/testConfig.cmake
+[2.486s] -- Up-to-date: /home/william/Área de Trabalho/workspace/install/test/share/test/cmake/testConfig-version.cmake
+[2.486s] -- Up-to-date: /home/william/Área de Trabalho/workspace/install/test/share/test/package.xml
+[2.486s] Invoked command in '/home/william/Área de Trabalho/workspace/build/test' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy:${CMAKE_PREFIX_PATH} /usr/local/bin/cmake --install /home/william/Área de Trabalho/workspace/build/test

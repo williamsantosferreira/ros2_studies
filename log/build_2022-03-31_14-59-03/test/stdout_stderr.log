@@ -1,0 +1,30 @@
+[ 33%] Built target publisher
+[ 66%] Built target subscriber
+[35m[1mConsolidate compiler generated dependencies of target turtle[0m
+[ 83%] [32mBuilding CXX object CMakeFiles/turtle.dir/src/turtle.cpp.o[0m
+[01m[K/home/william/Área de Trabalho/workspace/src/test/src/turtle.cpp:[m[K In member function ‘[01m[Kvoid Turtle::topic_callback(std_msgs::msg::String_<std::allocator<void> >::SharedPtr) const[m[K’:
+[01m[K/home/william/Área de Trabalho/workspace/src/test/src/turtle.cpp:42:69:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmsg[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+   42 |         void topic_callback([01;35m[Kconst  std_msgs::msg::String::SharedPtr msg[m[K) const
+      |                             [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~[m[K
+[100%] [32m[1mLinking CXX executable turtle[0m
+[100%] Built target turtle
+-- Install configuration: ""
+-- Up-to-date: /home/william/Área de Trabalho/workspace/install/test/lib/test/publisher
+-- Up-to-date: /home/william/Área de Trabalho/workspace/install/test/lib/test/subscriber
+-- Installing: /home/william/Área de Trabalho/workspace/install/test/lib/test/turtle
+-- Set runtime path of "/home/william/Área de Trabalho/workspace/install/test/lib/test/turtle" to ""
+-- Up-to-date: /home/william/Área de Trabalho/workspace/install/test/share/ament_index/resource_index/package_run_dependencies/test
+-- Up-to-date: /home/william/Área de Trabalho/workspace/install/test/share/ament_index/resource_index/parent_prefix_path/test
+-- Up-to-date: /home/william/Área de Trabalho/workspace/install/test/share/test/environment/ament_prefix_path.sh
+-- Up-to-date: /home/william/Área de Trabalho/workspace/install/test/share/test/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/william/Área de Trabalho/workspace/install/test/share/test/environment/path.sh
+-- Up-to-date: /home/william/Área de Trabalho/workspace/install/test/share/test/environment/path.dsv
+-- Up-to-date: /home/william/Área de Trabalho/workspace/install/test/share/test/local_setup.bash
+-- Up-to-date: /home/william/Área de Trabalho/workspace/install/test/share/test/local_setup.sh
+-- Up-to-date: /home/william/Área de Trabalho/workspace/install/test/share/test/local_setup.zsh
+-- Up-to-date: /home/william/Área de Trabalho/workspace/install/test/share/test/local_setup.dsv
+-- Installing: /home/william/Área de Trabalho/workspace/install/test/share/test/package.dsv
+-- Up-to-date: /home/william/Área de Trabalho/workspace/install/test/share/ament_index/resource_index/packages/test
+-- Up-to-date: /home/william/Área de Trabalho/workspace/install/test/share/test/cmake/testConfig.cmake
+-- Up-to-date: /home/william/Área de Trabalho/workspace/install/test/share/test/cmake/testConfig-version.cmake
+-- Up-to-date: /home/william/Área de Trabalho/workspace/install/test/share/test/package.xml

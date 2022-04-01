@@ -1,0 +1,107 @@
+[0.017s] Invoking command in '/home/william/Área de Trabalho/workspace/build/test': CMAKE_PREFIX_PATH=/home/william/Área de Trabalho/workspace/install/test:/home/william/Área de Trabalho/workspace/install/my_package:/opt/ros/foxy:/opt/ros/noetic /usr/local/bin/cmake --build /home/william/Área de Trabalho/workspace/build/test -- -j6 -l6
+[0.032s] -- Found ament_cmake: 0.9.9 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.051s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.236s] -- Found rclcpp: 2.4.1 (/opt/ros/foxy/share/rclcpp/cmake)
+[0.263s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.266s] -- Found rosidl_adapter: 1.2.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[0.352s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.391s] -- Found rmw_implementation_cmake: 1.0.3 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[0.392s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.504s] -- Found turtlesim: 1.2.5 (/opt/ros/foxy/share/turtlesim/cmake)
+[0.597s] -- Found ament_lint_auto: 0.9.6 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+[0.649s] -- Added test 'copyright' to check source files copyright and LICENSE
+[0.650s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[0.650s] -- Configured cppcheck include dirs: 
+[0.650s] -- Configured cppcheck exclude dirs and/or files: 
+[0.651s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[0.651s] -- Configured cpplint exclude dirs and/or files: 
+[0.651s] -- Added test 'lint_cmake' to check CMake code style
+[0.652s] -- Added test 'uncrustify' to check C / C++ code style
+[0.652s] -- Configured uncrustify additional arguments: 
+[0.652s] -- Added test 'xmllint' to check XML markup files
+[0.652s] -- Configuring done
+[0.662s] -- Generating done
+[0.663s] -- Build files have been written to: /home/william/Área de Trabalho/workspace/build/test
+[0.672s] [35m[1mConsolidate compiler generated dependencies of target publisher[0m
+[0.672s] [35m[1mConsolidate compiler generated dependencies of target subscriber[0m
+[0.677s] [35m[1mConsolidate compiler generated dependencies of target turtle[0m
+[0.683s] [ 33%] Built target publisher
+[0.684s] [ 66%] Built target subscriber
+[0.684s] [ 83%] [32mBuilding CXX object CMakeFiles/turtle.dir/src/turtle.cpp.o[0m
+[1.675s] In file included from [01m[K/opt/ros/foxy/include/rclcpp/client.hpp:40[m[K,
+[1.675s]                  from [01m[K/opt/ros/foxy/include/rclcpp/callback_group.hpp:23[m[K,
+[1.675s]                  from [01m[K/opt/ros/foxy/include/rclcpp/any_executable.hpp:20[m[K,
+[1.675s]                  from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategy.hpp:24[m[K,
+[1.675s]                  from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategies.hpp:18[m[K,
+[1.675s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executor_options.hpp:20[m[K,
+[1.675s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executor.hpp:33[m[K,
+[1.675s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26[m[K,
+[1.675s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:21[m[K,
+[1.675s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+[1.675s]                  from [01m[K/home/william/Área de Trabalho/workspace/src/test/src/turtle.cpp:34[m[K:
+[1.675s] [01m[K/home/william/Área de Trabalho/workspace/src/test/src/turtle.cpp:[m[K In member function ‘[01m[Kvoid Turtle::topic_callback2(turtlesim::msg::Pose_<std::allocator<void> >::SharedPtr) const[m[K’:
+[1.675s] [01m[K/home/william/Área de Trabalho/workspace/src/test/src/turtle.cpp:51:50:[m[K [01;31m[Kerror: [m[K‘[01m[Kmsg[m[K’ was not declared in this scope
+[1.676s]    51 |           RCLCPP_INFO(this->get_logger()," %.2f",[01;31m[Kmsg[m[K->x);
+[1.676s]       |                                                  [01;31m[K^~~[m[K
+[1.676s] [01m[K/home/william/Área de Trabalho/workspace/src/test/src/turtle.cpp:51:50:[m[K [01;36m[Knote: [m[Ksuggested alternatives:
+[1.676s] In file included from [01m[K/opt/ros/foxy/include/builtin_interfaces/msg/duration.hpp:7[m[K,
+[1.676s]                  from [01m[K/opt/ros/foxy/include/rclcpp/duration.hpp:20[m[K,
+[1.676s]                  from [01m[K/opt/ros/foxy/include/rclcpp/qos.hpp:20[m[K,
+[1.676s]                  from [01m[K/opt/ros/foxy/include/rclcpp/node_interfaces/node_graph_interface.hpp:31[m[K,
+[1.676s]                  from [01m[K/opt/ros/foxy/include/rclcpp/client.hpp:34[m[K,
+[1.676s]                  from [01m[K/opt/ros/foxy/include/rclcpp/callback_group.hpp:23[m[K,
+[1.676s]                  from [01m[K/opt/ros/foxy/include/rclcpp/any_executable.hpp:20[m[K,
+[1.676s]                  from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategy.hpp:24[m[K,
+[1.676s]                  from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategies.hpp:18[m[K,
+[1.676s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executor_options.hpp:20[m[K,
+[1.676s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executor.hpp:33[m[K,
+[1.676s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26[m[K,
+[1.676s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:21[m[K,
+[1.676s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+[1.676s]                  from [01m[K/home/william/Área de Trabalho/workspace/src/test/src/turtle.cpp:34[m[K:
+[1.676s] [01m[K/opt/ros/foxy/include/builtin_interfaces/msg/detail/duration__struct.hpp:26:11:[m[K [01;36m[Knote: [m[K  ‘[01m[Kbuiltin_interfaces::msg[m[K’
+[1.676s]    26 | namespace [01;36m[Kmsg[m[K
+[1.677s]       |           [01;36m[K^~~[m[K
+[1.677s] In file included from [01m[K/opt/ros/foxy/include/statistics_msgs/msg/detail/metrics_message__struct.hpp:22[m[K,
+[1.677s]                  from [01m[K/opt/ros/foxy/include/statistics_msgs/msg/metrics_message.hpp:7[m[K,
+[1.677s]                  from [01m[K/opt/ros/foxy/include/libstatistics_collector/collector/generate_statistics_message.hpp:21[m[K,
+[1.677s]                  from [01m[K/opt/ros/foxy/include/rclcpp/topic_statistics/subscription_topic_statistics.hpp:23[m[K,
+[1.677s]                  from [01m[K/opt/ros/foxy/include/rclcpp/subscription.hpp:50[m[K,
+[1.677s]                  from [01m[K/opt/ros/foxy/include/rclcpp/any_executable.hpp:25[m[K,
+[1.677s]                  from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategy.hpp:24[m[K,
+[1.677s]                  from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategies.hpp:18[m[K,
+[1.677s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executor_options.hpp:20[m[K,
+[1.677s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executor.hpp:33[m[K,
+[1.677s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26[m[K,
+[1.677s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:21[m[K,
+[1.677s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+[1.677s]                  from [01m[K/home/william/Área de Trabalho/workspace/src/test/src/turtle.cpp:34[m[K:
+[1.677s] [01m[K/opt/ros/foxy/include/statistics_msgs/msg/detail/statistic_data_point__struct.hpp:26:11:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstatistics_msgs::msg[m[K’
+[1.677s]    26 | namespace [01;36m[Kmsg[m[K
+[1.677s]       |           [01;36m[K^~~[m[K
+[1.677s] In file included from [01m[K/opt/ros/foxy/include/rcl_interfaces/msg/list_parameters_result.hpp:7[m[K,
+[1.677s]                  from [01m[K/opt/ros/foxy/include/rclcpp/node.hpp:34[m[K,
+[1.678s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[1.678s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:22[m[K,
+[1.678s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+[1.678s]                  from [01m[K/home/william/Área de Trabalho/workspace/src/test/src/turtle.cpp:34[m[K:
+[1.678s] [01m[K/opt/ros/foxy/include/rcl_interfaces/msg/detail/list_parameters_result__struct.hpp:26:11:[m[K [01;36m[Knote: [m[K  ‘[01m[Krcl_interfaces::msg[m[K’
+[1.678s]    26 | namespace [01;36m[Kmsg[m[K
+[1.678s]       |           [01;36m[K^~~[m[K
+[1.678s] In file included from [01m[K/opt/ros/foxy/include/std_msgs/msg/string.hpp:7[m[K,
+[1.678s]                  from [01m[K/home/william/Área de Trabalho/workspace/src/test/src/turtle.cpp:35[m[K:
+[1.678s] [01m[K/opt/ros/foxy/include/std_msgs/msg/detail/string__struct.hpp:26:11:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd_msgs::msg[m[K’
+[1.678s]    26 | namespace [01;36m[Kmsg[m[K
+[1.678s]       |           [01;36m[K^~~[m[K
+[1.678s] In file included from [01m[K/opt/ros/foxy/include/turtlesim/msg/pose.hpp:7[m[K,
+[1.678s]                  from [01m[K/home/william/Área de Trabalho/workspace/src/test/src/turtle.cpp:36[m[K:
+[1.678s] [01m[K/opt/ros/foxy/include/turtlesim/msg/detail/pose__struct.hpp:26:11:[m[K [01;36m[Knote: [m[K  ‘[01m[Kturtlesim::msg[m[K’
+[1.678s]    26 | namespace [01;36m[Kmsg[m[K
+[1.678s]       |           [01;36m[K^~~[m[K
+[1.678s] [01m[K/home/william/Área de Trabalho/workspace/src/test/src/turtle.cpp:50:68:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kturtle_pose[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[1.678s]    50 |         void topic_callback2([01;35m[Kconst turtlesim::msg::Pose::SharedPtr turtle_pose[m[K)const{
+[1.678s]       |                              [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~[m[K
+[3.116s] make[2]: *** [CMakeFiles/turtle.dir/build.make:76: CMakeFiles/turtle.dir/src/turtle.cpp.o] Error 1
+[3.116s] make[1]: *** [CMakeFiles/Makefile2:141: CMakeFiles/turtle.dir/all] Error 2
+[3.116s] make: *** [Makefile:146: all] Error 2
+[3.117s] Invoked command in '/home/william/Área de Trabalho/workspace/build/test' returned '2': CMAKE_PREFIX_PATH=/home/william/Área de Trabalho/workspace/install/test:/home/william/Área de Trabalho/workspace/install/my_package:/opt/ros/foxy:/opt/ros/noetic /usr/local/bin/cmake --build /home/william/Área de Trabalho/workspace/build/test -- -j6 -l6

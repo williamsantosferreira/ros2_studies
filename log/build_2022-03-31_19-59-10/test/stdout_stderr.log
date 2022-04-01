@@ -1,0 +1,15 @@
+[ 33%] Built target subscriber
+[35m[1mConsolidate compiler generated dependencies of target turtle_move[0m
+[ 66%] Built target publisher
+[ 83%] [32mBuilding CXX object CMakeFiles/turtle_move.dir/src/turtle_move.cpp.o[0m
+[01m[K/home/william/Área de Trabalho/workspace/src/test/src/turtle_move.cpp:[m[K In member function ‘[01m[Kvoid TurtleMove::publish()[m[K’:
+[01m[K/home/william/Área de Trabalho/workspace/src/test/src/turtle_move.cpp:55:8:[m[K [01;31m[Kerror: [m[K‘[01m[Kread[m[K’ was not declared in this scope; did you mean ‘[01m[Kfread[m[K’?
+   55 |     if([01;31m[Kread[m[K(kfd, &c, 1) < 0)
+      |        [01;31m[K^~~~[m[K
+      |        [32m[Kfread[m[K
+[01m[K/home/william/Área de Trabalho/workspace/src/test/src/turtle_move.cpp:63:3:[m[K [01;31m[Kerror: [m[K‘[01m[KROS_INFO[m[K’ was not declared in this scope
+   63 |   [01;31m[KROS_INFO[m[K("Move to right");
+      |   [01;31m[K^~~~~~~~[m[K
+make[2]: *** [CMakeFiles/turtle_move.dir/build.make:76: CMakeFiles/turtle_move.dir/src/turtle_move.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:141: CMakeFiles/turtle_move.dir/all] Error 2
+make: *** [Makefile:146: all] Error 2
