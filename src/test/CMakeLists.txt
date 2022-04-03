@@ -45,11 +45,15 @@ ament_target_dependencies(subscriber rclcpp std_msgs)
 add_executable(turtle_move src/turtle_move.cpp) 
 ament_target_dependencies(turtle_move rclcpp std_msgs turtlesim geometry_msgs)
 
+add_executable(turtle_node src/turtle_node.cpp) 
+ament_target_dependencies(turtle_node rclcpp std_msgs turtlesim geometry_msgs)
+
 
 install(TARGETS
   publisher
   subscriber
-  turtle_move 
+  turtle_move
+  turtle_node 
   DESTINATION lib/${PROJECT_NAME})
 
 ament_package()

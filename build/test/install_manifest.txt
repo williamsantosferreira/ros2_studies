@@ -1,6 +1,7 @@
 /home/william/Área de Trabalho/workspace/install/test/lib/test/publisher
 /home/william/Área de Trabalho/workspace/install/test/lib/test/subscriber
 /home/william/Área de Trabalho/workspace/install/test/lib/test/turtle_move
+/home/william/Área de Trabalho/workspace/install/test/lib/test/turtle_node
 /home/william/Área de Trabalho/workspace/install/test/share/ament_index/resource_index/package_run_dependencies/test
 /home/william/Área de Trabalho/workspace/install/test/share/ament_index/resource_index/parent_prefix_path/test
 /home/william/Área de Trabalho/workspace/install/test/share/test/environment/ament_prefix_path.sh

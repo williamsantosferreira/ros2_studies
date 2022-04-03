@@ -77,6 +77,18 @@ install/local/fast: preinstall/fast
 	/opt/cmake-3.21.4-linux-x86_64/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
 .PHONY : install/local/fast
 
+# Special rule for the target install
+install: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/opt/cmake-3.21.4-linux-x86_64/bin/cmake -P cmake_install.cmake
+.PHONY : install
+
+# Special rule for the target install
+install/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/opt/cmake-3.21.4-linux-x86_64/bin/cmake -P cmake_install.cmake
+.PHONY : install/fast
+
 # Special rule for the target install/strip
 install/strip: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
@@ -98,18 +110,6 @@ list_install_components:
 list_install_components/fast: list_install_components
 .PHONY : list_install_components/fast
 
-# Special rule for the target install
-install: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/opt/cmake-3.21.4-linux-x86_64/bin/cmake -P cmake_install.cmake
-.PHONY : install
-
-# Special rule for the target install
-install/fast: preinstall/fast
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/opt/cmake-3.21.4-linux-x86_64/bin/cmake -P cmake_install.cmake
-.PHONY : install/fast
-
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
@@ -120,16 +120,6 @@ rebuild_cache:
 rebuild_cache/fast: rebuild_cache
 .PHONY : rebuild_cache/fast
 
-# Special rule for the target test
-test:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
-	/opt/cmake-3.21.4-linux-x86_64/bin/ctest --force-new-ctest-process $(ARGS)
-.PHONY : test
-
-# Special rule for the target test
-test/fast: test
-.PHONY : test/fast
-
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake cache editor..."
@@ -139,6 +129,16 @@ edit_cache:
 # Special rule for the target edit_cache
 edit_cache/fast: edit_cache
 .PHONY : edit_cache/fast
+
+# Special rule for the target test
+test:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
+	/opt/cmake-3.21.4-linux-x86_64/bin/ctest --force-new-ctest-process $(ARGS)
+.PHONY : test
+
+# Special rule for the target test
+test/fast: test
+.PHONY : test/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -209,6 +209,19 @@ turtle_move: cmake_check_build_system
 turtle_move/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/turtle_move.dir/build.make CMakeFiles/turtle_move.dir/build
 .PHONY : turtle_move/fast
+
+#=============================================================================
+# Target rules for targets named turtle_node
+
+# Build rule for target.
+turtle_node: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 turtle_node
+.PHONY : turtle_node
+
+# fast build rule for target.
+turtle_node/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/turtle_node.dir/build.make CMakeFiles/turtle_node.dir/build
+.PHONY : turtle_node/fast
 
 #=============================================================================
 # Target rules for targets named subscriber
@@ -308,6 +321,30 @@ src/turtle_move.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/turtle_move.dir/build.make CMakeFiles/turtle_move.dir/src/turtle_move.cpp.s
 .PHONY : src/turtle_move.cpp.s
 
+src/turtle_node.o: src/turtle_node.cpp.o
+.PHONY : src/turtle_node.o
+
+# target to build an object file
+src/turtle_node.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/turtle_node.dir/build.make CMakeFiles/turtle_node.dir/src/turtle_node.cpp.o
+.PHONY : src/turtle_node.cpp.o
+
+src/turtle_node.i: src/turtle_node.cpp.i
+.PHONY : src/turtle_node.i
+
+# target to preprocess a source file
+src/turtle_node.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/turtle_node.dir/build.make CMakeFiles/turtle_node.dir/src/turtle_node.cpp.i
+.PHONY : src/turtle_node.cpp.i
+
+src/turtle_node.s: src/turtle_node.cpp.s
+.PHONY : src/turtle_node.s
+
+# target to generate assembly for a file
+src/turtle_node.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/turtle_node.dir/build.make CMakeFiles/turtle_node.dir/src/turtle_node.cpp.s
+.PHONY : src/turtle_node.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -326,6 +363,7 @@ help:
 	@echo "... publisher"
 	@echo "... subscriber"
 	@echo "... turtle_move"
+	@echo "... turtle_node"
 	@echo "... src/publisher.o"
 	@echo "... src/publisher.i"
 	@echo "... src/publisher.s"
@@ -335,6 +373,9 @@ help:
 	@echo "... src/turtle_move.o"
 	@echo "... src/turtle_move.i"
 	@echo "... src/turtle_move.s"
+	@echo "... src/turtle_node.o"
+	@echo "... src/turtle_node.i"
+	@echo "... src/turtle_node.s"
 .PHONY : help
 
 

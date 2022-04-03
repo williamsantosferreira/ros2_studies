@@ -65,6 +65,7 @@ CMAKE_BINARY_DIR = "/home/william/Área de Trabalho/workspace/build/test"
 # The main recursive "all" target.
 all: CMakeFiles/publisher.dir/all
 all: CMakeFiles/turtle_move.dir/all
+all: CMakeFiles/turtle_node.dir/all
 all: CMakeFiles/subscriber.dir/all
 .PHONY : all
 
@@ -76,6 +77,7 @@ preinstall:
 clean: CMakeFiles/publisher.dir/clean
 clean: CMakeFiles/uninstall.dir/clean
 clean: CMakeFiles/turtle_move.dir/clean
+clean: CMakeFiles/turtle_node.dir/clean
 clean: CMakeFiles/subscriber.dir/clean
 clean: CMakeFiles/test_uninstall.dir/clean
 .PHONY : clean
@@ -157,6 +159,32 @@ turtle_move: CMakeFiles/turtle_move.dir/rule
 CMakeFiles/turtle_move.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/turtle_move.dir/build.make CMakeFiles/turtle_move.dir/clean
 .PHONY : CMakeFiles/turtle_move.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/turtle_node.dir
+
+# All Build rule for target.
+CMakeFiles/turtle_node.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/turtle_node.dir/build.make CMakeFiles/turtle_node.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/turtle_node.dir/build.make CMakeFiles/turtle_node.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="/home/william/Área de Trabalho/workspace/build/test/CMakeFiles" --progress-num=7,8 "Built target turtle_node"
+.PHONY : CMakeFiles/turtle_node.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/turtle_node.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start "/home/william/Área de Trabalho/workspace/build/test/CMakeFiles" 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/turtle_node.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start "/home/william/Área de Trabalho/workspace/build/test/CMakeFiles" 0
+.PHONY : CMakeFiles/turtle_node.dir/rule
+
+# Convenience name for target.
+turtle_node: CMakeFiles/turtle_node.dir/rule
+.PHONY : turtle_node
+
+# clean rule for target.
+CMakeFiles/turtle_node.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/turtle_node.dir/build.make CMakeFiles/turtle_node.dir/clean
+.PHONY : CMakeFiles/turtle_node.dir/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/subscriber.dir
