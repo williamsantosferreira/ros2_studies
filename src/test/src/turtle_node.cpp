@@ -25,6 +25,8 @@ class TurtleNode: public rclcpp::Node{
 
     public:
         TurtleNode(): Node("turtle_node"){
+            RCLCPP_INFO(this->get_logger(),"Starting Turtle_Node!");
+            
             pub_odometry = this->create_publisher<geometry_msgs::msg::Point>("odometry",10);
             sub_pose = this->create_subscription<turtlesim::msg::Pose>("turtle1/pose", 10, std::bind(&TurtleNode::callback_pose, this, _1));
             timer = this->create_wall_timer(10ms, std::bind(&TurtleNode::publish, this));

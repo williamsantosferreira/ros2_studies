@@ -1,0 +1,17 @@
+name: turtle
+root: ./..
+
+windows:
+  - turtlesim:
+      layout: horizontal
+      panes:
+        - ros2 run turtlesim turtlesim_node
+        - source ./install/local_setup.bash; ros2 run test turtle_move
+        - source ./install/local_setup.bash; ros2 run test turtle_node
+        - ros2 topic echo /odometry
+        - ros2 topic echo /turtle1/pose
+
+#tmux kill-server
+
+ 
+
