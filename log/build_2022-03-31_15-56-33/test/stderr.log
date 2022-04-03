@@ -1,4 +1,0 @@
-[01m[K/home/william/Área de Trabalho/workspace/src/test/src/turtle.cpp:[m[K In member function ‘[01m[Kvoid Turtle::topic_callback2(turtlesim::msg::Pose_<std::allocator<void> >::SharedPtr) const[m[K’:
-[01m[K/home/william/Área de Trabalho/workspace/src/test/src/turtle.cpp:50:68:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmsg[m[K’ [[01;35m[K-Wunused-parameter[m[K]
-   50 |         void topic_callback2([01;35m[Kconst turtlesim::msg::Pose::SharedPtr msg[m[K)const{
-      |                              [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~[m[K

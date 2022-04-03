@@ -1,5 +1,0 @@
-[35m[1mConsolidate compiler generated dependencies of target turtle_move[0m
-[ 33%] Built target publisher
-[ 66%] Built target subscriber
-[ 83%] [32mBuilding CXX object CMakeFiles/turtle_move.dir/src/turtle_move.cpp.o[0m
-[100%] [32m[1mLinking CXX executable turtle_move[0m

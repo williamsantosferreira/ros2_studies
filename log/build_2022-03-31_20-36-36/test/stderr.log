@@ -1,5 +1,0 @@
-[31mCMake Error at CMakeLists.txt:49 (install):
-  install TARGETS given target "-lncurses" which does not exist.
-
-[0m
-make: *** [Makefile:349: cmake_check_build_system] Error 1

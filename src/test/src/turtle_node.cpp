@@ -2,7 +2,6 @@
 #include <chrono>
 #include <functional>
 #include "rclcpp/rclcpp.hpp"
-#include "std_msgs/msg/string.hpp"
 #include "turtlesim/msg/pose.hpp"
 #include "geometry_msgs/msg/point.hpp"
 #include "termios.h"

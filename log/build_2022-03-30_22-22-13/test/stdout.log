@@ -1,4 +1,0 @@
-[ 16%] [32mBuilding CXX object CMakeFiles/turtle.dir/src/turtle.cpp.o[0m
-[ 50%] Built target subscriber
-[ 83%] Built target publisher
-[100%] [32m[1mLinking CXX executable turtle[0m

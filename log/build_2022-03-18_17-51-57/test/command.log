@@ -1,4 +1,0 @@
-Invoking command in '/home/william/Área de Trabalho/workspace/build/test': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/local/bin/cmake --build /home/william/Área de Trabalho/workspace/build/test -- -j6 -l6
-Invoked command in '/home/william/Área de Trabalho/workspace/build/test' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/local/bin/cmake --build /home/william/Área de Trabalho/workspace/build/test -- -j6 -l6
-Invoking command in '/home/william/Área de Trabalho/workspace/build/test': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/local/bin/cmake --install /home/william/Área de Trabalho/workspace/build/test
-Invoked command in '/home/william/Área de Trabalho/workspace/build/test' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/local/bin/cmake --install /home/william/Área de Trabalho/workspace/build/test
