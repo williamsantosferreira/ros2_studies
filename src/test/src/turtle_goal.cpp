@@ -35,12 +35,12 @@ class TurtleGoal: public rclcpp::Node{
         void callback_pose(const turtlesim::msg::Pose::SharedPtr pose);
     public:
         TurtleGoal(): Node("turtle_goal"){
-            x_goal = 8;
-            y_goal = 8;
+            x_goal = 4;
+            y_goal = 3;
             
-            K = 3;
-            
-            tol = 0.1;
+            K = 10;
+        
+            tol = 0.01;
             RCLCPP_INFO(this->get_logger(),"Starting Turtle_Goal!");
             pub_w = this->create_publisher<geometry_msgs::msg::Twist>("/turtle1/cmd_vel",10);
             sub_pose = this->create_subscription<turtlesim::msg::Pose>("turtle1/pose", 10, std::bind(&TurtleGoal::callback_pose, this, _1));
@@ -58,30 +58,31 @@ int main(int argc, char* argv[]){
 }
 
 void TurtleGoal::callback_pose(const turtlesim::msg::Pose::SharedPtr pose){
-    double ex, ey, u, theta;
+    double ex, ey, et, theta;
 
     ex = x_goal - pose->x;
     ey = y_goal - pose->y;
 
     theta = atan2(ey,ex);
 
-    u = theta - pose->theta;
+    et = theta - pose->theta;
 
-
-
+    
     if(abs(ex) < tol && abs(ey)<0.1){
         v = 0;
         w = 0;
     }
     else{
         v = sqrt(pow(ex,2)+pow(ey,2));
-        w = K*u;
+        w = K*et;
     }
-
-    msg.linear.x = v;
+    msg.linear.x = v*cos(pose->theta);
+    msg.linear.y = v*sin(pose->theta);
     msg.angular.z = w;
 
 }
+
+
 
 void TurtleGoal::publish(){
     pub_w->publish(msg);
